@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="gr.teiath.anton.calckid.Main2Activity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/division"
+        android:id="@+id/imageButton7"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/plus"
+        android:id="@+id/imageButton9"
+        android:padding="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/minu"
+        android:padding="3dp"
+        android:id="@+id/imageButton5"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/imageButton6"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/blog"
+        android:id="@+id/imageButton6"
+        android:padding="3dp"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/imageButton7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:id="@+id/textView"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/imageButton9"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginEnd="27dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginEnd="17dp"
+        android:digits="0123456789.-"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:id="@+id/textView4"
+        android:layout_marginEnd="17dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_above="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView3"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginEnd="32dp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/button2" />
+
+    <Button
+        android:text="ΟΚ"
+        android:textSize="35sp"
+        android:background="@android:color/holo_green_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageButton5"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="25dp" />
+
+</RelativeLayout>
